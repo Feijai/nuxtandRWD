@@ -1,0 +1,101 @@
+.container {
+    // margin-top :010px ;
+    margin: 0 auto;
+    // min-height: 1000px;
+    min-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .topset {
+    margin-top: 70px;
+  }
+  img {
+    max-width: 100%;
+    padding: 5px;
+    height: 200px;
+    width: 360px;
+  }
+  .footerDisplay>svg {
+    margin-left :10%;
+    margin-right: 10%;
+}
+
+  
+  /* 寬度在 900-1200 的時候 */
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    img {
+      float: left;
+    }
+  
+    img:nth-of-type(3n + 1) {
+      clear: left;
+    }
+    .container {
+      min-width: 1200px;
+    }
+
+
+  }
+  
+  /* 寬度在 600-900 的時候 */
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    img {
+      float: left;
+    }
+  
+    img:nth-of-type(2n + 1) {
+      clear: left;
+    }
+    .container {
+      min-width: 900px;
+    }
+    .footerDisplay>svg {
+        margin-left :5%;
+        margin-right: 5%;
+    }
+  }
+  
+  /* 寬度在 600 的時候 */
+  @media screen  and (max-width: 600px) {
+    img {
+      float: left;
+    }
+  
+    img:nth-of-type(n + 1) {
+      clear: left;
+    }
+    .container {
+      min-width: 600px;
+    }
+    .footerDisplay>svg {
+        margin-left :5%;
+        margin-right: 5%;
+    }
+  }
+
+
+  .headerLeft{
+      float:right;
+      margin-right: 50px;
+  }
+
+  .headerLeft >svg{
+      width: 32px;
+      height: 32px;
+    //   padding :20px;
+    margin-left: 30px;
+  }
+
+  .footerDisplay>svg{
+    width: 32px;
+    height: 32px;
+
+  }
+
+  .footer{
+    text-align: center;
+  }
